@@ -31,20 +31,6 @@ Ensure your Spring Boot backend runs at `http://localhost:8080`
    git clone https://github.com/<your-username>/EazyPayouts.git
    cd EazyPayouts
 
-## Folder Structure
-EazyPayouts/
-│
-├── src/
-│   ├── components/        
-│   ├── assets/           
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-│
-├── package.json
-├── README.md
-└── .gitignore
-
 ## Developer
 Anshit Pradhan
 📧email: anshit20029@gmail.com
