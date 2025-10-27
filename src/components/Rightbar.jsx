@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import balanceIcon from "../assets/balance.png"; // your balance icon image
+import balanceIcon from "../assets/balance.png"; 
 
 const Rightbar = () => {
   const [companies, setCompanies] = useState([]);
@@ -10,7 +10,7 @@ const Rightbar = () => {
   const [selectedAccount, setSelectedAccount] = useState("");
   const [accountDetails, setAccountDetails] = useState(null);
 
-  // ✅ Fetch all companies
+  // Fetch all companies
   useEffect(() => {
     axios
       .get("http://localhost:8080/api/companies")
@@ -18,7 +18,7 @@ const Rightbar = () => {
       .catch((err) => console.error("Error fetching companies:", err));
   }, []);
 
-  // ✅ Fetch accounts for selected company
+  // Fetch accounts for selected company
   useEffect(() => {
     if (selectedCompany) {
       axios
@@ -31,7 +31,7 @@ const Rightbar = () => {
     }
   }, [selectedCompany]);
 
-  // ✅ Fetch account details + transactions
+  // Fetch account details + transactions
   useEffect(() => {
     if (selectedAccount) {
       axios
@@ -94,7 +94,7 @@ const Rightbar = () => {
               Available Balance
             </p>
             <p className="text-green-600 font-bold text-lg md:text-xl leading-tight">
-              ₹ {accountDetails.balance?.toLocaleString("en-IN")}
+              ₹ {accountDetails.availableBalance?.toLocaleString("en-IN")}
             </p>
           </div>
         </div>
@@ -126,8 +126,8 @@ const Rightbar = () => {
                     ₹ {txn.credit}
                   </td>
                   <td className="px-6 py-3">₹ {txn.accountBalance}</td>
-                  <td className="px-6 py-3">{txn.utr}</td>
-                  <td className="px-6 py-3">{txn.accountNumber}</td>
+                  <td className="px-6 py-3">{txn.utrRrn}</td>
+                  <td className="px-6 py-3">{txn.accountOrUpi}</td>
                 </tr>
               ))
             ) : (

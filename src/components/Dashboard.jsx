@@ -4,7 +4,7 @@ import Rightbar from './Rightbar'
 
 const Dashboard = () => {
   return (
-    <div className='w-screen h-screen bg-red-500 flex flex-row'>
+    <div className='w-screen h-screen flex flex-row'>
         <Leftbar/>
         <Rightbar/>
     </div>

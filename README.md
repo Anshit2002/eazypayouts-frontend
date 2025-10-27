@@ -1,16 +1,51 @@
-# React + Vite
+# EazyPayouts Dashboard (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React + Vite mockup built as per Figma design specifications.  
+It dynamically displays companies, their accounts, and transaction data using APIs.
 
-Currently, two official plugins are available:
+## 🧠 Features
+- 🎨 **Pixel-perfect design** – Matches the provided Figma layout  
+- 🧭 **Dynamic Dropdowns** – Switch between companies and accounts seamlessly  
+- 🔄 **Live Data with APIs** – No hardcoded values; data updates based on user selection  
+- 📱 **Fully Responsive** – Optimized for all screen sizes  
+- ⚙️ **Clean Component Structure** – Organized inside the `/components` folder  
+- 🧰 **Reusable Components** – Sidebar, Navbar, Dashboard, and Data Views  
+- 🌈 **Icons** – Used `react-icons` and `lucide-react` for consistent visuals
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧩 Tech Stack
+| Category | Technology |
+|-----------|-------------|
+| **Frontend** | React.js (Vite) |
+| **Styling** | Tailwind CSS |
+| **State Management** | React useState / useEffect |
+| **Icons** | React Icons, Lucide React |
+| **HTTP Client** | Axios |
+| **Backend (optional)** | Spring Boot / Mock API |
 
-## React Compiler
+## ⚙️ Backend API
+Ensure your Spring Boot backend runs at `http://localhost:8080`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ⚙️ Setup Instructions
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/<your-username>/EazyPayouts.git
+   cd EazyPayouts
 
-## Expanding the ESLint configuration
+## Folder Structure
+EazyPayouts/
+│
+├── src/
+│   ├── components/        
+│   ├── assets/           
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── package.json
+├── README.md
+└── .gitignore
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Developer
+Anshit Pradhan
+📧email: anshit20029@gmail.com
+

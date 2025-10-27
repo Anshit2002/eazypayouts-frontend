@@ -3,7 +3,7 @@ import Dashboard from './components/Dashboard'
 
 const App = () => {
   return (
-    <div className='w-screen h-screen bg-black'><Dashboard/></div>
+    <div className='w-screen h-screen'><Dashboard/></div>
   )
 }
 
